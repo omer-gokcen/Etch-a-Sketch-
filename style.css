@@ -35,6 +35,11 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 /* A elements that don't have a class get default styles */
@@ -71,4 +76,20 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+.container{
+    display: grid;
+   
+    width: 640px;
+    height: 640px;
+    
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+}
+.grid-item{
+  
+  border : 1px solid gray;
+}
+.add-background{
+  background-color: aquamarine;
 }
